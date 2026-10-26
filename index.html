@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // let guess = Number(prompt("guess a Number:"))
+    // while(guess !== 7){
+    //     console.log("wrong guess, try again");
+    //     guess=Number(prompt("guess a number:"))
+    // }
+    // console.log("correct guess.")
+
+
+let guess = Number(prompt("guess a Number:"))
+let attemps = 1
+    while(guess !== 7){
+        if (guess > 7){
+            console.log("Too high")
+        }else{
+            console.log("Too low")
+        }
+        attemps++
+        guess=Number(prompt("guess a number:"))
+    }
+    console.log("correct guess.")
+    console.log(`you made ${attemps} attemps.`);
+
+
+    </script>
+</body>
+</html>
